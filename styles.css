@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.content-section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#trainingMessage, #predictionMessage, #promptOutput {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+#resultSection {
+    margin-top: 40px;
+}

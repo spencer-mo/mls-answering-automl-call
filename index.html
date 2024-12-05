@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single View Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-section">
+        <h2>Training Dataset</h2>
+        <input type="file" id="trainingFile" accept=".csv, .parquet" onchange="handleFileUpload(event, 'training')">
+        <div id="trainingMessage"></div>
+    </div>
+
+    <div class="content-section">
+        <h2>Prediction Dataset</h2>
+        <input type="file" id="predictionFile" accept=".csv, .parquet" onchange="handleFileUpload(event, 'prediction')">
+        <div id="predictionMessage"></div>
+    </div>
+
+    <div class="content-section">
+        <h2>Prompt</h2>
+        <textarea id="promptInput" placeholder="Enter your prompt here..." rows="4" cols="50"></textarea>
+        <br>
+        <button onclick="generate()">Generate</button>
+        <div id="promptOutput"></div>
+    </div>
+
+    <div id="resultSection" style="display: none;">
+        <h2>Prediction Results</h2>
+        <table id="predictionResultsTable" border="1">
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
