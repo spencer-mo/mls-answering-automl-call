@@ -1,0 +1,27 @@
+{
+  "name": "mls-hackathon",
+  "version": "1.0.0",
+  "description": "### mls hackathon '24",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spencer-mo/mls-answering-automl-call.git"
+  },
+  "author": "spencer | vittorio | saikrishna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spencer-mo/mls-answering-automl-call/issues"
+  },
+  "homepage": "https://github.com/spencer-mo/mls-answering-automl-call#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "express-fileupload": "^1.5.1",
+    "graphql": "^16.9.0",
+    "graphql-request": "^7.1.2"
+  }
+}
